@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 04 - exercício 1</title>
+    <title>Aula 06 - exercício 3</title>
     <style>
         body {
             background-color: #f0f8ff;
@@ -22,13 +22,14 @@
 
 <!--JAVASCRIPT-->
     <script>
-        //Considerado um comentário em uma só linha
-        
-        /*Comentártio em mais de uma linha
-        blá blá blá*/
-        alert('Minha primeira mensagem')
-        confirm('Está gostando de x')
-        prompt('Qual é seu nome?')
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+
+        var soma = n1 + n2
+
+        alert(`A soma entre ${n1} e ${n2} é ${soma}`) //Template string
+
     </script>
 
 </body>
