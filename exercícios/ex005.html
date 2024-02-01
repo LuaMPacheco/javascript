@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com um botão</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:crimson;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            color: white;
+            background-color: cadetblue;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interagindo com um botão</h1>
+    <button onclick="inicio()">Clique em mim</button>
+    <h2>Botão 2</h2>
+    <button onclick="clicou()">Clique em mim</button>
+    
+    <script>
+        function inicio() {
+            var nome = prompt('Qual é o seu nome? ')
+            alert(`Olá, ${nome}! É um prazer imenso de conhecer!`)
+        }
+
+        function clicou() {
+            alert('Você clicou no botão!')
+        }
+    </script>
+</body>
+</html>
